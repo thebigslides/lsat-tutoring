@@ -4,13 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LSAT Tutoring</title>
+
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* =====================================================
+       ABOUT HERO OVERRIDES
+       ===================================================== */
+
+    .hero.about-hero {
+      grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.85fr);
+      align-items: center;
+      gap: 64px;
+    }
+
+    .about-hero .hero-text {
+      max-width: 720px;
+    }
+
+    .about-hero .hero-text h1 {
+      font-size: clamp(3rem, 5vw, 5.5rem);
+      line-height: 0.98;
+      margin-bottom: 30px;
+    }
+
+    .about-hero .hero-text h1 span {
+      display: block;
+    }
+
+    .about-copy {
+      max-width: 700px;
+    }
+
+    .about-copy p {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .about-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-hero .hero-buttons {
+      margin-top: 32px;
+    }
+
+    .score-image-placeholder {
+      width: 100%;
+      min-height: 180px;
+      margin: 14px 0 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .score-image-placeholder img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 240px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .hero.about-hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .about-hero .hero-text {
+        max-width: 100%;
+      }
+
+      .score-card {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+
   <header class="navbar">
-    <div class="logo">Alex's LSAT Tutoring</div>
+
+    <div class="logo">
+      LSAT Tutoring
+    </div>
 
     <nav>
       <a href="#about">About</a>
@@ -19,115 +106,312 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="nav-button" href="#contact">Book a Session</a>
+    <a
+      class="nav-button"
+      href="#contact"
+    >
+      Book a Session
+    </a>
+
   </header>
+
 
   <main>
 
-    <section class="hero">
+
+    <!-- =====================================================
+         ABOUT ME HERO
+         ===================================================== -->
+
+    <section
+      class="hero about-hero"
+      id="about"
+    >
+
+      <!-- LEFT SIDE -->
+
       <div class="hero-text">
-        <p class="eyebrow">PERSONALIZED LSAT COACHING</p>
 
-        <h1>
-          We don't take champions.
-          <span>We create them.</span>
-        </h1>
-
-        <p class="hero-description">
-          Insert goofy ass line here
+        <p class="eyebrow">
+          ABOUT YOUR TUTOR
         </p>
 
-        <div class="hero-buttons">
-          <a class="primary-button" href="#contact">Book a Free Consultation</a>
-          <a class="secondary-button" href="#services">Explore Tutoring</a>
+        <h1>
+          Hi, I'm
+          <span>YOUR NAME.</span>
+        </h1>
+
+
+        <div class="about-copy">
+
+          <p>
+            I tutor the LSAT with one main goal: helping students actually
+            understand the reasoning behind the test instead of relying on
+            a giant collection of shortcuts, tricks, and rules they have
+            memorized.
+          </p>
+
+          <p>
+            My approach focuses on figuring out exactly how you think through
+            a question, identifying where that reasoning starts to break down,
+            and building a process that you can repeat consistently across
+            Logical Reasoning and Reading Comprehension.
+          </p>
+
+          <p>
+            LSAT prep is not one-size-fits-all. Different students struggle
+            for different reasons, which is why tutoring should adapt to the
+            student rather than forcing the student to adapt to a rigid
+            curriculum.
+          </p>
+
+          <p>
+            This is where we can add your personal background, LSAT journey,
+            score, tutoring experience, education, and anything else you want
+            students to know about you.
+          </p>
+
         </div>
+
+
+        <div class="hero-buttons">
+
+          <a
+            class="primary-button"
+            href="#contact"
+          >
+            Book a Free Consultation
+          </a>
+
+          <a
+            class="secondary-button"
+            href="#services"
+          >
+            How I Tutor
+          </a>
+
+        </div>
+
       </div>
 
+
+      <!-- RIGHT SIDE CARD -->
+
       <div class="score-card">
-        <p class="score-label">YOUR NEXT SCORE</p>
+
+        <p class="score-label">
+          YOUR NEXT SCORE
+        </p>
+
 
         <div class="score-image-placeholder">
-          <span>IMAGE PLACEHOLDER</span>
+
+          <!--
+            WHEN YOU HAVE YOUR IMAGE:
+
+            1. Put the image inside your images folder.
+
+            Example:
+            images/score-image.png
+
+            2. Delete "IMAGE PLACEHOLDER" below.
+
+            3. Uncomment the <img> line.
+          -->
+
+          IMAGE PLACEHOLDER
+
+          <!--
+          <img
+            src="images/score-image.png"
+            alt="LSAT score improvement"
+          />
+          -->
+
         </div>
+
 
         <p>
           Build the reasoning skills needed to make meaningful,
           consistent LSAT improvement.
         </p>
 
+
         <div class="mini-stats">
-          <div>
-            <strong>1-on-1</strong>
-            <span>Tutoring</span>
-          </div>
 
           <div>
-            <strong>LR + RC</strong>
-            <span>Strategy</span>
+            <strong>
+              1-on-1
+            </strong>
+
+            <span>
+              Tutoring
+            </span>
           </div>
 
+
           <div>
-            <strong>Custom</strong>
-            <span>Study Plans</span>
+            <strong>
+              LR + RC
+            </strong>
+
+            <span>
+              Strategy
+            </span>
           </div>
+
+
+          <div>
+            <strong>
+              Custom
+            </strong>
+
+            <span>
+              Study Plans
+            </span>
+          </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =====================================================
+         PROOF BAR
+         ===================================================== -->
 
     <section class="proof-bar">
-      <span>Personalized Tutoring</span>
-      <span>Logical Reasoning</span>
-      <span>Reading Comprehension</span>
-      <span>Study Planning</span>
-      <span>Online Sessions</span>
+
+      <span>
+        Personalized Tutoring
+      </span>
+
+      <span>
+        Logical Reasoning
+      </span>
+
+      <span>
+        Reading Comprehension
+      </span>
+
+      <span>
+        Study Planning
+      </span>
+
+      <span>
+        Online Sessions
+      </span>
+
     </section>
 
-    <section class="section" id="services">
-      <p class="section-label">THE APPROACH</p>
 
-      <h2>You shouldn't just know what you missed.</h2>
+    <!-- =====================================================
+         TUTORING APPROACH
+         ===================================================== -->
+
+    <section
+      class="section"
+      id="services"
+    >
+
+      <p class="section-label">
+        THE APPROACH
+      </p>
+
+
+      <h2>
+        You shouldn't just know what you missed.
+      </h2>
+
 
       <p class="section-intro">
         You should understand exactly why you missed it and how to prevent
         the same mistake from happening again.
       </p>
 
+
       <div class="cards">
+
+
         <article class="card">
-          <div class="card-number">01</div>
-          <h3>Diagnose</h3>
+
+          <div class="card-number">
+            01
+          </div>
+
+          <h3>
+            Diagnose
+          </h3>
+
           <p>
             Identify the specific reasoning habits and question types
             costing you points.
           </p>
+
         </article>
 
+
         <article class="card">
-          <div class="card-number">02</div>
-          <h3>Understand</h3>
+
+          <div class="card-number">
+            02
+          </div>
+
+          <h3>
+            Understand
+          </h3>
+
           <p>
             Learn the logic behind the LSAT instead of relying on endless
             shortcuts and memorized tricks.
           </p>
+
         </article>
 
+
         <article class="card">
-          <div class="card-number">03</div>
-          <h3>Execute</h3>
+
+          <div class="card-number">
+            03
+          </div>
+
+          <h3>
+            Execute
+          </h3>
+
           <p>
             Turn good reasoning into a repeatable process you can use
             confidently under time pressure.
           </p>
+
         </article>
+
+
       </div>
+
     </section>
 
-    <section class="section alternate" id="about">
-      <div class="two-column">
-        <div>
-          <p class="section-label">YOUR TUTOR</p>
 
-          <h2>LSAT prep built around the student.</h2>
+    <!-- =====================================================
+         PHILOSOPHY
+         ===================================================== -->
+
+    <section class="section alternate">
+
+      <div class="two-column">
+
+
+        <div>
+
+          <p class="section-label">
+            THE PHILOSOPHY
+          </p>
+
+          <h2>
+            LSAT prep built around the student.
+          </h2>
 
           <p>
             Every student approaches the LSAT differently. Tutoring sessions
@@ -137,52 +421,110 @@
           </p>
 
           <p>
-            Replace this section later with your friend's background,
-            LSAT score, teaching experience, and philosophy.
+            The goal isn't simply to tell you which answer is correct.
+            It's to make your reasoning stronger so that you can reach the
+            correct answer yourself when nobody is sitting next to you on
+            test day.
           </p>
+
         </div>
+
 
         <div class="photo-placeholder">
           Tutor Photo
         </div>
+
+
       </div>
+
     </section>
 
-    <section class="section" id="results">
-      <p class="section-label">STUDENT RESULTS</p>
 
-      <h2>Real improvement comes from better reasoning.</h2>
+    <!-- =====================================================
+         RESULTS
+         ===================================================== -->
+
+    <section
+      class="section"
+      id="results"
+    >
+
+      <p class="section-label">
+        STUDENT RESULTS
+      </p>
+
+      <h2>
+        Real improvement comes from better reasoning.
+      </h2>
+
 
       <div class="testimonial">
+
         <p>
-          “Add a student testimonial here once your friend has one.”
+          “Add a student testimonial here once you have one.”
         </p>
 
-        <span>— Future LSAT Student</span>
+        <span>
+          — Future LSAT Student
+        </span>
+
       </div>
+
     </section>
 
-    <section class="cta" id="contact">
-      <p class="section-label">READY TO START?</p>
 
-      <h2>Take control of your LSAT prep.</h2>
+    <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+
+    <section
+      class="cta"
+      id="contact"
+    >
+
+      <p class="section-label">
+        READY TO START?
+      </p>
+
+      <h2>
+        Take control of your LSAT prep.
+      </h2>
 
       <p>
         Book a consultation and build a study plan around your actual
         strengths and weaknesses.
       </p>
 
-      <a class="primary-button light-button" href="mailto:YOUR-EMAIL-HERE">
+
+      <a
+        class="primary-button light-button"
+        href="mailto:YOUR-EMAIL-HERE"
+      >
         Book a Free Consultation
       </a>
+
     </section>
+
 
   </main>
 
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
   <footer>
-    <div class="logo">LSAT Tutoring</div>
-    <p>© LEBROOOOOOON.</p>
+
+    <div class="logo">
+      LSAT Tutoring
+    </div>
+
+    <p>
+      © LEBROOOOOOON.
+    </p>
+
   </footer>
+
 
   <script src="script.js"></script>
 
