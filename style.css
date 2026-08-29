@@ -876,3 +876,7 @@ footer .logo {
     scroll-behavior: auto !important;
   }
 }
+
+.about-hero .hero-text h1 span {
+  color: #f7f0e4;
+}
