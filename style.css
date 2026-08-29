@@ -880,3 +880,26 @@ footer .logo {
 .about-hero .hero-text h1 span {
   color: #f7f0e4;
 }
+
+/* ===== ABOUT PAGE TEXT VISIBILITY FIX ===== */
+
+.about-hero .hero-text,
+.about-hero .hero-text p,
+.about-copy,
+.about-copy p {
+  color: #f7f0e4 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.about-hero .hero-text h1 {
+  color: #f7f0e4 !important;
+}
+
+.about-hero .hero-text h1 span {
+  color: #d6c29f !important;
+}
+
+.about-hero .eyebrow {
+  color: #d6c29f !important;
+}
