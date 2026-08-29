@@ -1,5 +1,6 @@
 /* =========================================
-   MODERN ROBLOX-INSPIRED STYLE
+   NATURE'S HARMONY THEME
+   Forest • Sage • Espresso • Sand • Stone • Ivory
 ========================================= */
 
 * {
@@ -13,24 +14,38 @@ html {
 }
 
 :root {
-  --bg: #191b1d;
-  --surface: #232527;
-  --surface-2: #2b2d30;
-  --card: #ffffff;
+  /* Core palette */
+  --forest: #5A5D3A;
+  --sage: #8A8D76;
+  --espresso: #4D3D34;
+  --sand: #D2C2A8;
+  --stone: #8B877B;
+  --ivory: #FAF5EA;
 
-  --text: #f7f7f7;
-  --text-dark: #202124;
-  --muted: #b8b8b8;
-  --muted-dark: #6b6f75;
+  /* Site roles */
+  --bg: #FAF5EA;
 
-  --border: #3a3d40;
-  --border-light: #d9dde2;
+  --surface: #4D3D34;
+  --surface-2: #5A5D3A;
 
-  --accent: #335fff;
-  --accent-hover: #274ee8;
+  --card: #FAF5EA;
+  --card-warm: #F2EADB;
+
+  --text: #FAF5EA;
+  --text-dark: #4D3D34;
+
+  --muted: #D2C2A8;
+  --muted-dark: #777367;
+
+  --border: #665348;
+  --border-light: #D2C2A8;
+
+  --accent: #5A5D3A;
+  --accent-hover: #6B6E49;
 
   --radius: 10px;
 }
+
 
 /* =========================================
    BODY
@@ -40,7 +55,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 
   background: var(--bg);
-  color: var(--text);
+  color: var(--text-dark);
 
   line-height: 1.5;
 
@@ -51,6 +66,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 
 /* =========================================
    PAGE WIDTH
@@ -67,6 +83,7 @@ footer {
   margin-right: auto;
 }
 
+
 /* =========================================
    NAVBAR
 ========================================= */
@@ -81,9 +98,9 @@ footer {
   align-items: center;
   justify-content: space-between;
 
-  background: var(--surface);
+  background: var(--espresso);
 
-  border: 1px solid var(--border);
+  border: 1px solid #665348;
   border-radius: var(--radius);
 }
 
@@ -91,7 +108,7 @@ footer {
   font-size: 21px;
   font-weight: 800;
 
-  color: white;
+  color: var(--ivory);
 
   letter-spacing: -0.4px;
 }
@@ -107,7 +124,7 @@ nav a {
 
   border-radius: 8px;
 
-  color: #d8d8d8;
+  color: var(--sand);
 
   font-size: 14px;
   font-weight: 700;
@@ -116,8 +133,8 @@ nav a {
 }
 
 nav a:hover {
-  background: #303236;
-  color: white;
+  background: var(--forest);
+  color: var(--ivory);
 }
 
 .nav-button {
@@ -125,8 +142,8 @@ nav a:hover {
 
   border-radius: 8px;
 
-  background: white;
-  color: #202124;
+  background: var(--ivory);
+  color: var(--espresso);
 
   font-size: 14px;
   font-weight: 800;
@@ -135,8 +152,10 @@ nav a:hover {
 }
 
 .nav-button:hover {
-  background: #e9e9e9;
+  background: var(--sand);
+  color: var(--espresso);
 }
+
 
 /* =========================================
    HERO
@@ -152,9 +171,9 @@ nav a:hover {
   gap: 48px;
   align-items: center;
 
-  background: var(--surface);
+  background: var(--espresso);
 
-  border: 1px solid var(--border);
+  border: 1px solid #665348;
   border-radius: 14px;
 }
 
@@ -166,7 +185,7 @@ nav a:hover {
 .section-label {
   margin-bottom: 12px;
 
-  color: #b8bdc5;
+  color: var(--sand);
 
   font-size: 12px;
   font-weight: 800;
@@ -182,11 +201,11 @@ nav a:hover {
   letter-spacing: -2.8px;
   font-weight: 900;
 
-  color: white;
+  color: var(--ivory);
 }
 
 .hero h1 span {
-  color: #9aa0a6;
+  color: var(--sage);
 }
 
 .hero-description {
@@ -194,11 +213,12 @@ nav a:hover {
 
   max-width: 620px;
 
-  color: #c2c5c9;
+  color: var(--sand);
 
   font-size: 17px;
   line-height: 1.65;
 }
+
 
 /* =========================================
    HERO BUTTONS
@@ -226,8 +246,8 @@ nav a:hover {
 }
 
 .primary-button {
-  background: var(--accent);
-  color: white;
+  background: var(--forest);
+  color: var(--ivory);
 }
 
 .primary-button:hover {
@@ -235,15 +255,17 @@ nav a:hover {
 }
 
 .secondary-button {
-  background: #303236;
-  color: white;
+  background: transparent;
+  color: var(--ivory);
 
-  border: 1px solid #44474b;
+  border: 1px solid var(--sage);
 }
 
 .secondary-button:hover {
-  background: #383b3f;
+  background: var(--sage);
+  color: var(--ivory);
 }
+
 
 /* =========================================
    SCORE CARD
@@ -252,16 +274,16 @@ nav a:hover {
 .score-card {
   padding: 30px;
 
-  background: #111214;
+  background: #3F322B;
 
-  border: 1px solid #35383b;
+  border: 1px solid #6B584C;
   border-radius: 12px;
 
-  color: white;
+  color: var(--ivory);
 }
 
 .score-label {
-  color: #9ca1a8;
+  color: var(--sand);
 
   font-size: 12px;
   font-weight: 800;
@@ -276,18 +298,21 @@ nav a:hover {
   font-weight: 900;
 
   letter-spacing: -1.5px;
+
+  color: var(--ivory);
 }
 
 .score span {
-  color: #8b9096;
+  color: var(--sage);
 }
 
 .score-card > p {
-  color: #b8bcc1;
+  color: var(--sand);
 
   font-size: 14px;
   line-height: 1.55;
 }
+
 
 /* =========================================
    MINI STATS
@@ -302,21 +327,22 @@ nav a:hover {
   margin-top: 22px;
   padding-top: 18px;
 
-  border-top: 1px solid #303338;
+  border-top: 1px solid #6B584C;
 }
 
 .mini-stats div {
   padding: 10px;
 
-  background: #1b1d20;
+  background: var(--espresso);
 
+  border: 1px solid #665348;
   border-radius: 8px;
 }
 
 .mini-stats strong {
   display: block;
 
-  color: white;
+  color: var(--ivory);
 
   font-size: 13px;
 }
@@ -326,10 +352,11 @@ nav a:hover {
 
   margin-top: 2px;
 
-  color: #91979d;
+  color: var(--sage);
 
   font-size: 12px;
 }
+
 
 /* =========================================
    PROOF BAR
@@ -345,16 +372,17 @@ nav a:hover {
   flex-wrap: wrap;
   gap: 26px;
 
-  background: var(--surface);
+  background: var(--forest);
 
-  border: 1px solid var(--border);
+  border: 1px solid #6B6E49;
   border-radius: 10px;
 
-  color: #d5d7da;
+  color: var(--ivory);
 
   font-size: 13px;
   font-weight: 700;
 }
+
 
 /* =========================================
    GENERAL SECTIONS
@@ -365,15 +393,15 @@ nav a:hover {
 
   padding: 44px;
 
-  background: var(--card);
+  background: var(--ivory);
+  color: var(--espresso);
 
-  color: var(--text-dark);
-
+  border: 1px solid var(--sand);
   border-radius: 12px;
 }
 
 .section-label {
-  color: #737980;
+  color: var(--forest);
 }
 
 .section h2 {
@@ -385,7 +413,7 @@ nav a:hover {
   letter-spacing: -1.8px;
   font-weight: 900;
 
-  color: #202124;
+  color: var(--espresso);
 }
 
 .section-intro {
@@ -398,6 +426,7 @@ nav a:hover {
   font-size: 16px;
   line-height: 1.6;
 }
+
 
 /* =========================================
    CARDS
@@ -417,9 +446,9 @@ nav a:hover {
 
   padding: 24px;
 
-  background: #f5f6f7;
+  background: #F3EBDD;
 
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--sand);
   border-radius: 10px;
 
   transition: 0.18s ease;
@@ -428,7 +457,10 @@ nav a:hover {
 .card:hover {
   transform: translateY(-3px);
 
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-color: var(--sage);
+
+  box-shadow:
+    0 8px 24px rgba(77, 61, 52, 0.12);
 }
 
 .card-number {
@@ -443,8 +475,8 @@ nav a:hover {
 
   border-radius: 8px;
 
-  background: #e7ebff;
-  color: var(--accent);
+  background: var(--forest);
+  color: var(--ivory);
 
   font-size: 13px;
   font-weight: 900;
@@ -456,22 +488,23 @@ nav a:hover {
   font-size: 22px;
   font-weight: 900;
 
-  color: #202124;
+  color: var(--espresso);
 }
 
 .card p {
-  color: #686d73;
+  color: #716B62;
 
   font-size: 14px;
   line-height: 1.6;
 }
+
 
 /* =========================================
    TUTOR SECTION
 ========================================= */
 
 .alternate {
-  background: #f4f5f6;
+  background: #E8DECD;
 }
 
 .two-column {
@@ -485,7 +518,7 @@ nav a:hover {
 .two-column p {
   margin-top: 16px;
 
-  color: #686d73;
+  color: #716B62;
 
   font-size: 15px;
   line-height: 1.65;
@@ -498,16 +531,17 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 
-  background: #dfe2e5;
+  background: var(--sand);
 
-  border: 1px solid #cfd3d7;
+  border: 1px solid var(--sage);
   border-radius: 12px;
 
-  color: #7c8186;
+  color: var(--espresso);
 
   font-size: 13px;
   font-weight: 800;
 }
+
 
 /* =========================================
    TESTIMONIAL
@@ -520,9 +554,9 @@ nav a:hover {
 
   padding: 24px;
 
-  background: #f4f5f6;
+  background: #F3EBDD;
 
-  border: 1px solid #d9dde2;
+  border: 1px solid var(--sand);
   border-radius: 10px;
 }
 
@@ -530,7 +564,7 @@ nav a:hover {
   font-size: 18px;
   line-height: 1.5;
 
-  color: #2b2d30;
+  color: var(--espresso);
 }
 
 .testimonial span {
@@ -538,10 +572,11 @@ nav a:hover {
 
   margin-top: 14px;
 
-  color: #747980;
+  color: var(--stone);
 
   font-size: 13px;
 }
+
 
 /* =========================================
    CTA
@@ -554,9 +589,9 @@ nav a:hover {
 
   text-align: center;
 
-  background: var(--surface);
+  background: var(--forest);
 
-  border: 1px solid var(--border);
+  border: 1px solid #6B6E49;
   border-radius: 12px;
 }
 
@@ -567,7 +602,7 @@ nav a:hover {
   font-weight: 900;
   letter-spacing: -1.8px;
 
-  color: white;
+  color: var(--ivory);
 }
 
 .cta p {
@@ -575,19 +610,20 @@ nav a:hover {
 
   margin: 16px auto 24px;
 
-  color: #b7bbc0;
+  color: #E5DCCB;
 
   font-size: 16px;
 }
 
 .light-button {
-  background: white;
-  color: #1e2022;
+  background: var(--ivory);
+  color: var(--espresso);
 }
 
 .light-button:hover {
-  background: #e9e9e9;
+  background: var(--sand);
 }
+
 
 /* =========================================
    FOOTER
@@ -602,7 +638,7 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  color: #9ba0a6;
+  color: var(--stone);
 
   font-size: 13px;
 }
@@ -610,8 +646,9 @@ footer {
 footer .logo {
   font-size: 14px;
 
-  color: #d8d8d8;
+  color: var(--espresso);
 }
+
 
 /* =========================================
    MOBILE
@@ -681,6 +718,7 @@ footer .logo {
   }
 }
 
+
 /* =========================================
    JAVASCRIPT ANIMATIONS
 ========================================= */
@@ -736,10 +774,10 @@ footer .logo {
 }
 
 .navbar-scrolled {
-  background: rgba(35, 37, 39, 0.96);
+  background: rgba(77, 61, 52, 0.97);
 
   box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.22);
+    0 8px 30px rgba(77, 61, 52, 0.22);
 }
 
 
@@ -837,5 +875,4 @@ footer .logo {
 
     scroll-behavior: auto !important;
   }
-
 }
